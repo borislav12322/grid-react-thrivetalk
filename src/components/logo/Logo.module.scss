@@ -1,0 +1,9 @@
+@import '../../SASS/abstracts/mixins';
+@import '../../SASS/abstracts/vars';
+@import '../../SASS/basis/fonts';
+
+.wrapperLogo{
+    .logo{
+        @include font ('Larsseit', $colorLogo, 24px)
+    }
+}

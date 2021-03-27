@@ -1,0 +1,28 @@
+/* 100: Thin;
+200: Extra Light (Ultra Light);
+300: Light;
+400: Normal;
+500: Medium;
+600: Semi Bold (Demi Bold);
+700: Bold;
+800: Extra Bold (Ultra Bold);
+900: Black (Heavy). */
+
+// @font-face {
+// 	font-family: 'SfProBold';
+// 	src: url('#{$way-fonts}/SFProDisplay-Bold.eot');
+// 	src:local('SFProDisplay-Bold'),
+// 		 url('#{$way-fonts}/SFProDisplay-Bold.eot') format('embedded-opentype'),
+// 		 url('#{$way-fonts}/SFProDisplay-Bold.woff2') format('woff2'),
+// 		 url('#{$way-fonts}/SFProDisplay-Bold.woff') format('woff'),
+// 		 url('#{$way-fonts}/SFProDisplay-Bold.ttf') format('truetype');
+// 	font-weight: bold;
+// 	font-style: normal;
+// }
+
+@font-face{
+    font-family: 'Larsseit';
+    src: url('../../assets/fonts/Larsseit.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
