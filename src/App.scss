@@ -1,5 +1,5 @@
-// .App{
-//     display: grid;
-//     grid-template-columns: repeat(4, 360px);
-//     grid-auto-rows: minmax(360px, auto)
-// }
+.App{
+    display: grid;
+    grid-template-columns: 25% 8% 6% 10% 13% 3% 8% 25%;
+    grid-auto-rows: minmax(80px, auto);
+}

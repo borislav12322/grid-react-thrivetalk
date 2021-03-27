@@ -1,0 +1,9 @@
+.wrapper{
+    display: flex;
+    grid-area: 11/1/12/9;
+
+    .content{
+        display: flex;
+        align-items: center;
+    }
+}

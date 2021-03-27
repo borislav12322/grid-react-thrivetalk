@@ -1,0 +1,10 @@
+.descriptionWrapper{
+    grid-area: 2/1/3/9;
+    display: flex;
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
