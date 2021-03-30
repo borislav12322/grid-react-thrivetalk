@@ -1,0 +1,9 @@
+@import '../../../SASS/basis/fonts';
+@import '../../../SASS/abstracts/mixins';
+@import '../../../SASS/abstracts/vars';
+
+.informationTitle{
+    @include font('Larsseit', #22356F, 14px);
+    min-height: 48px;
+    height: 100%;
+}

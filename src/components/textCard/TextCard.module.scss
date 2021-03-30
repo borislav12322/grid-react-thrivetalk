@@ -1,0 +1,29 @@
+@import '../../SASS/abstracts/mixins';
+@import '../../SASS/abstracts/vars';
+@import '../../SASS/basis/fonts';
+
+.wrapper{
+    padding: {
+        top: 55px;
+        right: 77px;
+        bottom: 37px;
+        left: 105px;
+    };
+
+
+    .title{
+        font-size: 28px;
+        font-family: 'Larsseit';
+        margin-bottom: 28px;
+
+    }
+
+    .text{
+        max-width: 298px;
+        width: 100%;
+        font-family: 'Larsseit';
+        font-size: 16px;
+        line-height: 25.31px;
+        
+    }
+}

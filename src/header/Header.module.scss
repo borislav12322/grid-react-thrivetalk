@@ -1,6 +1,49 @@
+@import '../SASS/abstracts/mixins';
+@import '../SASS/abstracts/vars';
+@import '../SASS/basis/fonts';
+
 .header{
+    background-color: #F4F9E2;
+    padding-left: 179px;
     grid-area: 1/1/2/9;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     .top{
+        padding-top: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 251px;
     }
+
+    .img{
+        position: absolute;
+        top: 0;
+        right: -100px;
+        
+
+    }
+
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;;
+        .title{
+            @include font('Larsseit', #22356F, 48px);
+            min-height: 167px;
+            max-width: 484px;
+            width: 100%;
+        }
+
+        .text{
+            @include font('Larsseit', #22356F, 24px);
+            line-height: 42px;
+            width: 100%;
+            margin-bottom: 63px;
+            max-width: 469px;
+    }
+}
 }

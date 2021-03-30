@@ -1,3 +1,11 @@
 .wrapper{
-    grid-area: 12/1/13/9;
+    background-color: #62D0DF;
+    grid-area: 10/1/11/9;
+    display: flex;
+    align-items: center;
+    padding-left: 179px;
+    .copyRight{
+        font-size: 14px;
+        color: #FFFFFF;
+    }
 }

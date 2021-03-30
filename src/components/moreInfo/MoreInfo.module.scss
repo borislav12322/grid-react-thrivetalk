@@ -1,4 +1,37 @@
+@import '../../SASS/abstracts/mixins';
+@import '../../SASS/abstracts/vars';
+@import '../../SASS/basis/fonts';
+
 .wrapper{
-    grid-area: 9/1/10/9;
+    grid-area: 7/1/8/9;
     display: flex;
+    .content{
+        padding: {
+            top: 103px;
+            bottom: 42px;
+            left: 0;
+            right: 0;
+        };
+        display: flex;
+        flex-direction: column;
+        margin-left: 106px;
+
+        .title{
+            @include font('Larsseit', #22356F, 16px);
+            margin-bottom: 225px;
+        }
+
+        .text{
+            @include font('Larsseit', #22356F, 36px);
+            line-height: 53px;
+            max-width: 676px;
+            width: 100%;
+            margin-bottom: 152px;
+        }
+
+        .link{
+            @include font('Larsseit', #FAB63E, 16px);
+        }
+        
+    }
 }

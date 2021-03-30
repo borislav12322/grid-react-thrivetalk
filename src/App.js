@@ -18,71 +18,92 @@ function App() {
       <Header />
       <Description />
       <About />
+      <div className="smallCards">
+        <Card cardText='Weight Lifting'
+          styleWrapper={{
+            // gridArea: '4/1/5/2',
+            backgroundColor: '#FFE2DE',
+            padding: '95px 68px 211px 78px'
+          }} />
+        <Card cardText='Running & Spinning'
+          styleWrapper={{
+            // gridArea: '4/2/5/5',
+            backgroundColor: '#C4E769',
+            padding: '95px 68px 211px 78px'
+          }} />
+        <Card cardText='Pumping Iron'
+          styleWrapper={{
+            // gridArea: '4/5/5/8',
+            backgroundColor: '#62D0DF',
+            padding: '95px 68px 211px 78px'
+          }} />
+        <Card cardText='Pumping Iron'
+          styleWrapper={{
+            // gridArea: '4/8/5/9',
+            backgroundColor: '#0052C1',
+            padding: '95px 68px 211px 78px'
+          }} />
+      </div>
 
-      <Card cardText='Weight Lifting'
-        styleWrapper={{ gridArea: '4/1/5/2', backgroundColor: '#FFE2DE', maxHeight: '360px', height: '100%' }} />
-      <Card cardText='Running & Spinning'
-        styleWrapper={{ gridArea: '4/2/5/5', backgroundColor: '#C4E769' }} />
-      <Card cardText='Pumping Iron'
-        styleWrapper={{ gridArea: '4/5/5/8', backgroundColor: '#62D0DF' }} />
-      <Card cardText='Pumping Iron'
-        styleWrapper={{ gridArea: '4/8/5/9', backgroundColor: '#0052C1' }} />
+      <div className="largeCards">
+        <Card cardText='Physical Health'
+          styleWrapper={{ backgroundColor: '#22356F', padding: '126px 219px 282px 104px' }} />
+        <Card cardText='Mental Health'
+          styleWrapper={{ backgroundColor: '#0052C1', padding: '126px 219px 282px 104px' }} />
+        <Card cardText='Nutrition'
+          styleWrapper={{
 
+            backgroundImage: `url(${SmoothieBackground})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPositon: 'center',
+            backgroundSize: 'cover',
+            padding: '126px 219px 282px 104px'
+          }} />
+        <Card cardText='Gymnastics'
+          styleWrapper={{
 
-      <Card cardText='Physical Health'
-        styleWrapper={{ gridArea: '5/1/6/3', backgroundColor: '#22356F' }} />
-      <Card cardText='Mental Health'
-        styleWrapper={{ gridArea: '5/3/6/7', backgroundColor: '#0052C1' }} />
-      <Card cardText='Nutrition'
-        styleWrapper={{
-          gridArea: '5/7/6/9',
-          backgroundImage: `url(${SmoothieBackground})`,
-          backgroundRepeat: 'no-repeat',
-          backgroundPositon: 'center',
-          backgroundSize: 'cover'
-        }} />
-      <Card cardText='Gymnastics'
-        styleWrapper={{
-          gridArea: '6/1/7/3',
-          backgroundColor: '#62D0DF'
-        }} />
-      <Card cardText='Crossfit'
-        styleWrapper={{
-          gridArea: '6/3/7/7',
-          backgroundColor: '#DEE1FF'
-        }} />
-      <Card cardText='Aerobics'
-        styleWrapper={{
-          gridArea: '6/7/7/9',
-          backgroundColor: '#8F00FF'
-        }} />
+            backgroundColor: '#62D0DF',
+            padding: '126px 219px 282px 104px'
+          }} />
+        <Card cardText='Crossfit'
+          styleWrapper={{
 
-      
+            backgroundColor: '#DEE1FF',
+            padding: '126px 219px 282px 104px'
+          }} />
+        <Card cardText='Aerobics'
+          styleWrapper={{
+
+            backgroundColor: '#8F00FF',
+            padding: '126px 219px 282px 104px'
+          }} />
+      </div>
+      <div className="textCards">
         <TextCard
           titleText='Nutritional Plans'
           textValue='Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.'
-          styleWrapper={{gridArea:'7/1/8/3'}} />
+        />
         <TextCard
           titleText='Weight Loss'
           textValue='Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.'
-          styleWrapper={{gridArea:'7/3/8/7'}} />
+        />
         <TextCard
           titleText='Mental Peace'
           textValue='Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.'
-          styleWrapper={{gridArea:'7/7/8/9'}} />
+        />
         <TextCard
           titleText='Home Training'
           textValue='Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.'
-          styleWrapper={{gridArea:'8/1/9/3'}} />
+        />
         <TextCard
           titleText='Work/Life Balance'
           textValue='Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.'
-          styleWrapper={{gridArea:'8/3/9/7'}} />
+        />
         <TextCard
           titleText='Cardio'
           textValue='Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.'
-          styleWrapper={{gridArea:'8/7/9/9'}} />
-
+        />
+      </div>
       <MoreInfo />
       <Contacts />
       <Information />

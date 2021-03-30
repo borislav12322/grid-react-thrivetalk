@@ -1,9 +1,64 @@
+@import '../../SASS/abstracts/mixins';
+@import '../../SASS/abstracts/vars';
+@import '../../SASS/basis/fonts';
+
+
 .wrapper{
     display: flex;
-    grid-area: 11/1/12/9;
+    grid-area: 9/1/10/9;
 
     .content{
+        padding-left: 68px;
+        padding-top: 98px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+
+        .someInfo{
+            margin-right: 56px;
+            display: flex;
+            flex-direction: column;
+            max-width: 207px;
+            width: 100%;
+
+            .textInfo{
+                margin-top: 20px;
+                @include font('Larsseit', #22356F, 14px);
+            }
+        }
+
+        .phoneNumber{
+            margin-right: 22px;
+            max-width: 240px;
+            width: 100%;
+
+            .phoneNumberText{
+                display: flex;
+                flex-direction: column;
+                max-width: 150px;
+                width: 100%;
+                margin-top: 20px;
+                @include font('Larsseit', #22356F, 14px);
+            }
+
+            .number{
+                line-height: 22px;
+                @include font('Larsseit', #22356F, 14px);
+            }
+        }
+
+        .hours{
+            display: flex;
+            flex-direction: column;
+
+            .hoursText{
+                margin-top: 20px;
+                
+
+                .weekDays{
+                    margin-bottom: 10px;
+                }
+            }
+
+        }
     }
 }

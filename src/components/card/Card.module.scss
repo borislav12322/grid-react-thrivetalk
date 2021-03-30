@@ -1,14 +1,21 @@
-// .wrapper{
+@import '../../SASS/abstracts/mixins';
+@import '../../SASS/abstracts/vars';
+@import '../../SASS/basis/fonts';
 
+.wrapper{
+    .text{
+        @include font ('Larsseit', $cardText, 32px );
+        position: relative;
 
-//     .text{
-//         padding: {
-//             top: 95px;
-//             bottom: 0;
-//             left: 0;
-//             right: 0;
-//         };
+        &::before{
+            content: '';
+            width: 255px;
+            height: 1px;
+            background-color: #fff;
+            position: absolute;
+            top: -23px;
+            left: -28px;
+        }
+    }
+}
 
-
-//     }
-// }
