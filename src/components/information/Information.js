@@ -21,11 +21,11 @@ function Information() {
 
                 <div className={s.hours}>
                     <InfoTitle titleText='OFFICE HOURS' />
-                    <div className={s.hoursText}>
-                        <p className={s.weekDays}>Mo-Fr: 8:00-19:00</p>
-                        <p>Sa: 8:00-14:00</p>
-                        <p>Su: closed</p>
-                    </div>
+                    <ul className={s.hoursList}>
+                        <li className={s.item}>Sa: 8:00-14:00</li>
+                        <li className={s.item}>Su: closed</li>
+                        <li className={s.item}>Mo-Fr: 8:00-19:00</li>
+                    </ul>
                 </div>
             </div>
         </div>

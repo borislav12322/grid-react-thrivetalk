@@ -8,6 +8,7 @@
     grid-area: 9/1/10/9;
 
     .content{
+        width: 100%;
         padding-left: 68px;
         padding-top: 98px;
         display: flex;
@@ -49,13 +50,15 @@
         .hours{
             display: flex;
             flex-direction: column;
+            max-width: 240px;
+            
 
-            .hoursText{
+            .hoursList{
                 margin-top: 20px;
-                
 
-                .weekDays{
-                    margin-bottom: 10px;
+                .item{
+                    @include font('Larsseit', #22356F, 14px);
+                    line-height: 23px;
                 }
             }
 

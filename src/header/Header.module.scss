@@ -15,17 +15,41 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 251px;
+        margin-bottom: 187px;
+        position: relative;
+        z-index: 4;
+
+        .menuNavList{
+            display: flex;
+            position: absolute;
+            top: 38px;
+            right: 50%;
+            .menuItem{
+                @include font('Larsseit', #22356F, 14px);
+                line-height: 16px;
+                margin-right: 10px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
     }
 
+    .imgs{
     .img{
         position: absolute;
         top: 0;
-        right: -100px;
-        
-
+        right: 0px;
+        z-index: 2;
     }
 
+    .background{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    }
 
     .content{
         display: flex;
