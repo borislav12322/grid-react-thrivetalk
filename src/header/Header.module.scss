@@ -4,14 +4,24 @@
 
 .header{
     background-color: #F4F9E2;
-    padding-left: 179px;
+    padding-top: 27px;
+    padding-bottom: 50px;
     grid-area: 1/1/2/9;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
+
+    @media screen and(min-width: 320px){
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media screen and(min-width: 1282px){
+        padding-left: 179px;
+        padding-right: 131px;
+        height: 100vh;
+    }
     .top{
-        padding-top: 27px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -21,9 +31,6 @@
 
         .menuNavList{
             display: flex;
-            position: absolute;
-            top: 38px;
-            right: 50%;
             .menuItem{
                 @include font('Larsseit', #22356F, 14px);
                 line-height: 16px;
@@ -33,13 +40,21 @@
                 }
             }
         }
+
+        .topBtn{
+            border:none;
+        }
     }
 
-    .imgs{
+    .images{
+    display: none;
+        @media screen and (min-width: 1282px) {
+                display: block;
+        }
     .img{
         position: absolute;
         top: 0;
-        right: 0px;
+        right: 0;
         z-index: 2;
     }
 
@@ -54,20 +69,48 @@
     .content{
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;;
+        justify-content: center;
+        align-items: flex-start;
+
+        @media screen and (min-width: 1282px) {
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
         .title{
-            @include font('Larsseit', #22356F, 48px);
-            min-height: 167px;
-            max-width: 484px;
+            @include font('Larsseit', #22356F, 30px);
+            line-height: 38px;
             width: 100%;
+            margin-bottom: 19px;
+
+            @media screen and (min-width: 480px){
+                @include font('Larsseit', #22356F, 42px);
+                line-height: 53px;
+
+            }
+
+            @media screen and (min-width: 1282px){
+                @include font('Larsseit', #22356F, 48px);
+                line-height: 53px;
+                max-width: 484px;
+            }
         }
 
         .text{
-            @include font('Larsseit', #22356F, 24px);
-            line-height: 42px;
+            @include font('Larsseit', #22356F, 20px);
+            line-height: 26px;
             width: 100%;
             margin-bottom: 63px;
-            max-width: 469px;
+
+            @media screen and (min-width: 480px){
+                @include font('Larsseit', #22356F, 24px);
+                line-height: 36px;
+            }
+
+            @media screen and (min-width: 1282px) {
+                max-width: 469px;
+                @include font('Larsseit', #22356F, 24px);
+                line-height: 42px;
+            }
     }
 }
 }
