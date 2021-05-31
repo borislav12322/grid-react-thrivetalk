@@ -3,10 +3,16 @@ import Button from '../components/button/Button';
 import s from './Header.module.scss';
 import HeaderImg from '../assets/img/headerImg.svg';
 import HeaderBackground from '../assets/img/headerBackground.svg';
+import MobileMenu from "../components/mobileMenu/MobileMenu";
+import {useState} from "react";
 
-function Header(props) {
+function Header(props, setActive) {
+    const [menuActive, setMenuActive] = useState(false)
+  const items = [{value: 'Home', href: '#'}, {value: 'About', href: '#'}, {value: 'Services', href: '#'}, {value: 'Blog', href: '#'}];
+
   return (
     <header className={s.header}>
+      <MobileMenu active={menuActive} setActive={setMenuActive} items={items}/>
       <div className={s.top}>
         <Logo />
         <ul className={s.menuNavList}>
@@ -24,6 +30,9 @@ function Header(props) {
           </li>
         </ul>
         <Button btnValue="CONTACT US"/>
+          <button className = {s.mobileBtn} onClick={() => setMenuActive(!menuActive)}>
+
+          </button>
       </div>
       <div className={s.images}>
         <img src={HeaderImg} alt="" className={s.img} />

@@ -19,7 +19,6 @@
         .title{
             @include font('Larsseit', #FFFFFF, 36px);
             margin-bottom: 75px;
-
         }
 
         .text{
@@ -31,4 +30,9 @@
         }
         
     }
+
+    .img{
+        height: 100%;
+    }
+
 }
