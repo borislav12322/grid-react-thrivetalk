@@ -31,7 +31,12 @@
         z-index: 4;
 
         .menuNavList{
-            display: flex;
+            display: none;
+
+            @media screen and (min-width: 1024px){
+                display: flex;
+            }
+
             .menuItem{
                 @include font('Larsseit', #22356F, 14px);
                 line-height: 16px;

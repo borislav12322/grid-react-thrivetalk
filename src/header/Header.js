@@ -5,6 +5,7 @@ import HeaderImg from '../assets/img/headerImg.svg';
 import HeaderBackground from '../assets/img/headerBackground.svg';
 import MobileMenu from "../components/mobileMenu/MobileMenu";
 import {useState} from "react";
+import MobileMenuModule from "../components/mobileMenuModule/MobileMenuModule";
 
 function Header(props, setActive) {
     const [menuActive, setMenuActive] = useState(false)
@@ -13,6 +14,7 @@ function Header(props, setActive) {
   return (
     <header className={s.header}>
       <MobileMenu active={menuActive} setActive={setMenuActive} items={items}/>
+      {/*  <MobileMenuModule active={menuActive} setActive={setMenuActive} items={items} />*/}
       <div className={s.top}>
         <Logo />
         <ul className={s.menuNavList}>
@@ -29,7 +31,7 @@ function Header(props, setActive) {
             <a href="#" className={s.menuLink}>Blog</a>
           </li>
         </ul>
-        <Button btnValue="CONTACT US"/>
+        <Button btnValue="CONTACT US" />
           <button className = {s.mobileBtn} onClick={() => setMenuActive(!menuActive)}>
 
           </button>
