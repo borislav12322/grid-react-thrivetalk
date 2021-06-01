@@ -11,6 +11,7 @@ import Footer from './footer/Footer';
 
 // Images
 import SmoothieBackground from './assets/img/smothieBackground.svg';
+import SmallCards from "./components/smallCards/SmallCards";
 
 function App() {
   return (
@@ -18,32 +19,7 @@ function App() {
       <Header />
       <Description />
       <About />
-      <div className="smallCards">
-        <Card cardText='Weight Lifting'
-          styleWrapper={{
-            // gridArea: '4/1/5/2',
-            backgroundColor: '#FFE2DE',
-            padding: '95px 68px 211px 78px'
-          }} />
-        <Card cardText='Running & Spinning'
-          styleWrapper={{
-            // gridArea: '4/2/5/5',
-            backgroundColor: '#C4E769',
-            padding: '95px 68px 211px 78px'
-          }} />
-        <Card cardText='Pumping Iron'
-          styleWrapper={{
-            // gridArea: '4/5/5/8',
-            backgroundColor: '#62D0DF',
-            padding: '95px 68px 211px 78px'
-          }} />
-        <Card cardText='Pumping Iron'
-          styleWrapper={{
-            // gridArea: '4/8/5/9',
-            backgroundColor: '#0052C1',
-            padding: '95px 68px 211px 78px'
-          }} />
-      </div>
+        <SmallCards/>
 
       <div className="largeCards">
         <Card cardText='Physical Health'

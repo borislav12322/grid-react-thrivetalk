@@ -3,18 +3,58 @@
 @import '../../SASS/basis/fonts';
 
 .wrapper{
+    width: 300px;
+    display: flex;
+    position: relative;
+
+
+
+    @media screen and (min-width: 768px) {
+        max-width: none;
+        width: 100%;
+    }
+
+
+    &::before{
+        content: '';
+        padding-top: 100%;
+    }
+
+    &::after{
+        content: '';
+        max-width: 465px;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        top: 72px;
+        left: 50%;
+        transform: translateX(-50%);
+
+
+
+        @media screen and (min-width: 1175px){
+            max-width: 255px;
+        }
+
+        @media screen and (min-width: 1175px){
+
+        }
+    }
+
     .text{
         @include font ('Larsseit', $cardText, 32px );
         position: relative;
 
         &::before{
-            content: '';
-            width: 255px;
-            height: 1px;
-            background-color: #fff;
             position: absolute;
-            top: -23px;
-            left: -28px;
+            content: '';
+            width: 9px;
+            height: 9px;
+            background: #E9B730;
+            border-radius: 50px;
+            top: 12px;
+            left: -20px;
         }
     }
 }

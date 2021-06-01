@@ -1,0 +1,24 @@
+.smallCards{
+  margin-bottom: 120px;
+
+  .wrapper{
+  display: grid;
+    grid-template-columns: repeat(4, 300px);
+  overflow-x: auto;
+  //display: flex;
+  //justify-content: space-between;
+  //width: 100%;
+    @media screen and (min-width: 768px) {
+
+    }
+
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 1175px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+}
