@@ -4,6 +4,7 @@ import sectionImg from '../../assets/img/moreInfoImg.svg';
 
 function MoreInfo() {
   return (
+      <section className={s.moreInfo}>
     <div className={s.wrapper}>
       <img src={sectionImg} alt="" className={s.image} />
       <div className={s.content}>
@@ -12,6 +13,7 @@ function MoreInfo() {
         <a href="#" className={s.link}>GET HELP NOW</a>
       </div>
     </div>
+      </section>
   );
 }
 export default MoreInfo;

@@ -21,7 +21,6 @@ function App() {
         <SmallCards/>
         <LargeCards/>
         <TextCards/>
-
       <MoreInfo />
       <Contacts />
       <Information />

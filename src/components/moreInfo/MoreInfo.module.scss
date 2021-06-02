@@ -2,10 +2,22 @@
 @import '../../SASS/abstracts/vars';
 @import '../../SASS/basis/fonts';
 
-.wrapper{
-    grid-area: 7/1/8/9;
+.moreInfo{
+.wrapper {
+    padding: 0 15px;
     display: flex;
-    .content{
+    align-items: center;
+    justify-content: flex-start;
+
+    .image{
+        display: none;
+        @media screen and (min-width: 1110px){
+            display: block;
+        }
+
+    }
+
+    .content {
         padding: {
             top: 103px;
             bottom: 42px;
@@ -14,24 +26,48 @@
         };
         display: flex;
         flex-direction: column;
-        margin-left: 106px;
+        margin-left: 0px;
 
-        .title{
-            @include font('Larsseit', #22356F, 16px);
-            margin-bottom: 225px;
+
+        @media screen and (min-width: 1110px){
+            margin-left: 106px;
         }
 
-        .text{
-            @include font('Larsseit', #22356F, 36px);
-            line-height: 53px;
+        .title {
+            @include font('Larsseit', #22356F, 16px);
+            margin-bottom: 50px;
+
+
+
+            @media screen and (min-width: 1280px){
+                margin-bottom: 225px;
+
+            }
+        }
+
+        .text {
+            @include font('Larsseit', #22356F, 20px);
+            line-height: 22px;
             max-width: 676px;
             width: 100%;
-            margin-bottom: 152px;
+            margin-bottom: 50px;
+
+            @media screen and (min-width: 480px){
+                font-size: 36px;
+                line-height: 53px;
+            }
+
+            @media screen and (min-width: 1280px){
+                margin-bottom: 152px;
+
+            }
+
         }
 
-        .link{
+        .link {
             @include font('Larsseit', #FAB63E, 16px);
         }
-        
+
     }
+}
 }
