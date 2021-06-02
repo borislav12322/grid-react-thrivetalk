@@ -1,0 +1,38 @@
+.largeCards{
+  .wrapper {
+    display: grid;
+    overflow-x: auto;
+    grid-template-columns: repeat(6, 300px);
+
+
+    @media screen and (min-width: 576px){
+      grid-template-columns: repeat(6, 480px);
+    }
+
+    @media screen and (min-width: 768px) {
+
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 1fr;
+    }
+
+    @media screen and (min-width: 1175px) {
+      grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .customizeCard{
+      &::after{
+        left: 70px;
+        top: 96px;
+      }
+    }
+
+    .textCustomize{
+      &::before{
+        width: 12px;
+        height: 12px;
+        left: -30px;
+      }
+    }
+  }
+}
