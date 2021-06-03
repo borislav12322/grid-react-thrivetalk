@@ -1,13 +1,19 @@
-.wrapper{
+@import "../SASS/abstracts/mixins";
+@import "../SASS/abstracts/vars";
+@import "../SASS/basis/fonts";
+
+.footer{
+
+.wrapper {
     background-color: #62D0DF;
-    grid-area: 10/1/11/9;
+    padding-left: 194px;
     display: flex;
     align-items: center;
-    padding-left: 179px;
-    padding-top: 32px;
-    padding-bottom: 26px;
-    .copyRight{
-        font-size: 14px;
+    min-height: 80px;
+
+    .copyRight {
         color: #FFFFFF;
+        @include font('Larsseit', #FFFFFF, 14px);
     }
+}
 }
