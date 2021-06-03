@@ -9,24 +9,39 @@
     align-items: center;
     justify-content: flex-start;
 
+    @media screen and (min-width: 1110px){
+        padding: 0;
+
+    }
+
     .image{
         display: none;
         @media screen and (min-width: 1110px){
             display: block;
+
         }
 
     }
 
     .content {
         padding: {
-            top: 103px;
-            bottom: 42px;
+            top: 30px;
+            bottom: 30px;
             left: 0;
             right: 0;
         };
         display: flex;
         flex-direction: column;
         margin-left: 0px;
+
+        @media screen and (min-width: 480px){
+            padding: {
+                top: 103px;
+                bottom: 42px;
+                left: 0;
+                right: 0;
+            };
+        }
 
 
         @media screen and (min-width: 1110px){
@@ -46,8 +61,8 @@
         }
 
         .text {
-            @include font('Larsseit', #22356F, 20px);
-            line-height: 22px;
+            @include font('Larsseit', #22356F, 28px);
+            line-height: 53px;
             max-width: 676px;
             width: 100%;
             margin-bottom: 50px;

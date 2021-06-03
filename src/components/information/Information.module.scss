@@ -2,66 +2,136 @@
 @import '../../SASS/abstracts/vars';
 @import '../../SASS/basis/fonts';
 
-
-.wrapper{
+.information{
+.wrapper {
     display: flex;
-    grid-area: 9/1/10/9;
+    flex-direction: column;
 
-    .content{
-        width: 100%;
-        padding-left: 68px;
-        padding-top: 98px;
+    @media screen and (min-width: 1280px){
+        flex-direction: row;
+    }
+    .content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
         display: flex;
+        flex-direction: column;
         align-items: flex-start;
 
-        .someInfo{
-            margin-right: 56px;
+
+
+
+        @media screen and (min-width: 768px){
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+
+
+        }
+
+        @media screen and (min-width: 1280px){
+            padding-left: 68px;
+            padding-top: 98px;
+            justify-content: flex-start;
+        }
+
+      @media screen and (min-width: 1600px){
+       justify-content: center;
+      }
+
+
+        .someInfo {
             display: flex;
             flex-direction: column;
+          margin-bottom: 30px;
+
+
+            @media screen and (min-width: 768px){
+
+              margin-bottom: 0;
+
+            }
+
+          @media screen and (min-width: 1280px){
             max-width: 207px;
             width: 100%;
+            margin-right: 56px;
+          }
 
-            .textInfo{
+            .textInfo {
                 margin-top: 20px;
-                @include font('Larsseit', #22356F, 14px);
+                @include font('Larsseit', rgba(34, 53, 111, 0.5), 14px);
+                line-height: 23px;
+              max-width: 207px;
+              width: 100%;
             }
         }
 
-        .phoneNumber{
-            margin-right: 22px;
+        .phoneNumber {
+
+            display: flex;
+            flex-direction: column;
+          margin-bottom: 30px;
+
+
+
+            @media screen and (min-width: 768px){
+
+              margin-bottom: 0;
+
+            }
+
+          @media screen and (min-width: 1280px){
             max-width: 240px;
             width: 100%;
+            margin-right: 22px;
+          }
 
-            .phoneNumberText{
+            .phoneNumberText {
                 display: flex;
                 flex-direction: column;
                 max-width: 150px;
                 width: 100%;
                 margin-top: 20px;
-                @include font('Larsseit', #22356F, 14px);
+                @include font('Larsseit', rgba(34, 53, 111, 0.5), 14px);
+                margin-bottom: 20px;
             }
 
-            .number{
+            .number {
                 line-height: 22px;
-                @include font('Larsseit', #22356F, 14px);
+                @include font('Larsseit', rgba(34, 53, 111, 0.5), 14px);
+                margin-bottom: 5px;
+
+            }
+            .emailLink{
+                @include font('Larsseit', blue, 14px);
             }
         }
 
-        .hours{
+        .hours {
             display: flex;
             flex-direction: column;
-            max-width: 240px;
-            
 
-            .hoursList{
+
+          @media screen and (min-width: 1280px){
+            max-width: 240px;
+            width: 100%;
+          }
+
+
+            .hoursList {
                 margin-top: 20px;
 
-                .item{
-                    @include font('Larsseit', #22356F, 14px);
+                .item {
+                    @include font('Larsseit', rgba(34, 53, 111, 0.5), 14px);
                     line-height: 23px;
                 }
             }
 
         }
     }
+}
 }

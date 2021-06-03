@@ -2,38 +2,107 @@
 @import '../../SASS/abstracts/vars';
 @import '../../SASS/basis/fonts';
 
-.wrapper{
-    grid-area: 8/1/9/9;
-    display: flex;
-    justify-content: space-between;
-    background-color: #22356F;
-    padding-left: 180px;
+.contacts{
 
-    .content{
+.wrapper {
+    display: flex;
+
+    background-color: #22356F;
+    padding-left: 15px;
+  justify-content: flex-end;
+
+  @media screen and (min-width: 480px){
+    padding-left: 80px;
+  }
+
+
+
+  @media screen and (min-width: 1110px){
+    justify-content: space-between;
+  }
+
+
+
+
+
+    @media screen and (min-width: 1280px){
+        padding-left: 180px;
+    }
+
+    .content {
         display: flex;
         flex-direction: column;
-        padding-top: 103px;
+      padding-top: 103px;
+      padding-bottom: 80px;
+      padding-right: 15px;
 
-        .titleSection{
+      @media screen and (min-width: 480px){
+        padding-right: 15px;
+      }
+
+
+      @media screen and (min-width: 1110px){
+        padding-bottom: 0;
+        padding-right: 0;
+      }
+
+
+        .titleSection {
             @include font('Larsseit', #FFFFFF, 16px);
-            margin-bottom: 230px;
+            margin-bottom: 40px;
+          text-align: right;
+
+            @media screen and (min-width: 1110px){
+              text-align: left;
+margin-bottom: 230px;
+            }
         }
 
-        .titleText{
+        .titleText {
             @include font('Larsseit', #FFFFFF, 64px);
             margin-bottom: 75px;
+          text-align: right;
+
+            @media screen and (min-width: 1110px){
+text-align: left;
+            }
         }
 
-        .text{
-            @include font('Larsseit', #FFFFFF, 36px);
+        .text {
+            @include font('Larsseit', #FFFFFF, 28px);
             max-width: 579px;
             width: 100%;
             line-height: 53px;
             margin-bottom: 17px;
+          text-align: right;
+
+
+          @media screen and (min-width: 480px){
+font-size: 36px;
+          }
+
+          @media screen and (min-width: 1110px){
+            text-align: left;
+          }
         }
-        .link{
+
+        .link {
             @include font('Larsseit', #62D0DF, 16px);
+          text-align: right;
+
+          @media screen and (min-width: 1110px){
+            text-align: left;
+          }
         }
-        
+
     }
+
+    .image{
+        display: none;
+
+        @media screen and (min-width: 1110px){
+            display: block;
+        }
+    }
+}
 }

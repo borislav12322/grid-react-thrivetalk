@@ -4,6 +4,7 @@ import InfoImg from '../../assets/img/infoImg.svg';
 
 function Information() {
     return (
+        <section className={s.information}>
         <div className={s.wrapper}>
             <img src={InfoImg} alt="" className={s.image} />
             <div className={s.content}>
@@ -29,6 +30,7 @@ function Information() {
                 </div>
             </div>
         </div>
+        </section>
     );
 }
 export default Information;

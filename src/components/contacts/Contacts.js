@@ -4,6 +4,7 @@ import ContactsImg from '../../assets/img/contactsImg.svg';
 
 function Contacts() {
   return (
+      <section className={s.contacts}>
     <div className={s.wrapper}>
       <div className={s.content}>
         <h2 className={s.titleSection}>CONTACT US</h2>
@@ -13,6 +14,7 @@ function Contacts() {
       </div>
       <img src={ContactsImg} alt="" className={s.image} />
     </div>
+      </section>
   );
 }
 export default Contacts;

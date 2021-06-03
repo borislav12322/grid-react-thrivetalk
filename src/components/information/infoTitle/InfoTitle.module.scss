@@ -4,6 +4,7 @@
 
 .informationTitle{
     @include font('Larsseit', #22356F, 14px);
+    font-weight: 100;
+    line-height: 11px;
     min-height: 48px;
-    height: 100%;
 }
