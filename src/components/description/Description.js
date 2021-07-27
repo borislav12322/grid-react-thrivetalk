@@ -1,5 +1,5 @@
 import s from './Description.module.scss';
-import AboutWoman from '../../assets/img/womanAbout.svg';
+import AboutWoman from '../../assets/img/womanAbout.jpeg';
 
 function Description() {
   return (

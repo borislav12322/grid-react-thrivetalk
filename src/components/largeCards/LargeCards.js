@@ -1,6 +1,6 @@
 import s from './LargeCards.module.scss';
 import Card from "../card/Card";
-import SmoothieBackground from '../../assets/img/smothieBackground.svg';
+import SmoothieBackground from '../../assets/img/smothieBackground.jpeg';
 
 
 

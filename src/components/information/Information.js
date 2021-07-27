@@ -1,6 +1,6 @@
 import s from './Information.module.scss';
 import InfoTitle from './infoTitle/InfoTitle';
-import InfoImg from '../../assets/img/infoImg.svg';
+import InfoImg from '../../assets/img/infoImg.jpeg';
 
 function Information() {
     return (

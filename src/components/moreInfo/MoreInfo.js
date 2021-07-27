@@ -1,5 +1,5 @@
 import s from './MoreInfo.module.scss';
-import sectionImg from '../../assets/img/moreInfoImg.svg';
+import sectionImg from '../../assets/img/moreInfoImg.jpeg';
 
 
 function MoreInfo() {

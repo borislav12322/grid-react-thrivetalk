@@ -1,5 +1,5 @@
 import s from './Contacts.module.scss';
-import ContactsImg from '../../assets/img/contactsImg.svg';
+import ContactsImg from '../../assets/img/contactsImg.jpeg';
 
 
 function Contacts() {
