@@ -2,7 +2,7 @@ import s from './Button.module.scss';
 
 function Button(props) {
     return (
-        <button className={`${s.btnBlue} + ${s.btnYellow}`}>
+        <button className={props.btnClass}>
             {props.btnValue}
         </button>
         

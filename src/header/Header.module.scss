@@ -2,7 +2,7 @@
 @import '../SASS/abstracts/vars';
 @import '../SASS/basis/fonts';
 
-.header{
+.header {
     background-color: #F4F9E2;
     padding-top: 27px;
     padding-bottom: 50px;
@@ -11,18 +11,18 @@
     flex-direction: column;
     position: relative;
 
-    @media screen and(min-width: 320px){
+    @media screen and(min-width: 320px) {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    @media screen and(min-width: 1282px){
+    @media screen and(min-width: 1282px) {
         padding-left: 179px;
         padding-right: 131px;
         height: 100vh;
     }
 
-    .top{
+    .top {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -30,28 +30,40 @@
         position: relative;
         z-index: 4;
 
-        .menuNavList{
+        .menuNavList {
             display: none;
 
-            @media screen and (min-width: 1024px){
+            @media screen and (min-width: 1024px) {
                 display: flex;
             }
 
-            .menuItem{
+            .menuItem {
                 @include font('Larsseit', #22356F, 14px);
                 line-height: 16px;
                 margin-right: 10px;
-                &:last-child{
+
+                &:last-child {
                     margin-right: 0;
                 }
             }
         }
 
-        .topBtn{
-            border:none;
+        .btnTop {
+            display: none;
+            border: none;
+            background: #62D0DF;
+            border-radius: 50px;
+            line-height: 16px;
+            min-height: 50px;
+            padding: 0 30px;
+            @include font('Larsseit', #FFFFFF, 14px);
+
+            @media screen and (min-width: 1024px) {
+                display: block;
+            }
         }
 
-        .mobileBtn{
+        .mobileBtn {
             cursor: pointer;
             display: block;
             background-repeat: no-repeat;
@@ -68,27 +80,29 @@
         }
     }
 
-    .images{
-    display: none;
+    .images {
+        display: none;
+
         @media screen and (min-width: 1282px) {
-                display: block;
+            display: block;
         }
-    .img{
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 2;
+
+        .img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
     }
 
-    .background{
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
-    }
-    }
-
-    .content{
+    .content {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -98,32 +112,32 @@
             justify-content: flex-end;
             align-items: flex-start;
         }
-        .title{
+
+        .title {
             @include font('Larsseit', #22356F, 30px);
             line-height: 38px;
             width: 100%;
             margin-bottom: 19px;
 
-            @media screen and (min-width: 480px){
+            @media screen and (min-width: 480px) {
                 @include font('Larsseit', #22356F, 42px);
                 line-height: 53px;
-
             }
 
-            @media screen and (min-width: 1282px){
+            @media screen and (min-width: 1282px) {
                 @include font('Larsseit', #22356F, 48px);
                 line-height: 53px;
                 max-width: 484px;
             }
         }
 
-        .text{
+        .text {
             @include font('Larsseit', #22356F, 20px);
             line-height: 26px;
             width: 100%;
             margin-bottom: 63px;
 
-            @media screen and (min-width: 480px){
+            @media screen and (min-width: 480px) {
                 @include font('Larsseit', #22356F, 24px);
                 line-height: 36px;
             }
@@ -133,6 +147,36 @@
                 @include font('Larsseit', #22356F, 24px);
                 line-height: 42px;
             }
+        }
+        .btns{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            @media screen and (min-width: 400px){
+                flex-direction: row;
+            }
+            .btnContent__left{
+                border: none;
+                background: #F9B640;
+                line-height: 23px;
+                min-height: 50px;
+                padding: 0 30px;
+                @include font('Larsseit', #FFFFFF, 16px);
+                
+                @media screen and (min-width: 400px){
+                    margin-right: 38px;
+                }
+            }
+
+            .btnContent__right{
+                border: none;
+                background: transparent;
+                line-height: 23px;
+                min-height: 50px;
+                @include font('Larsseit', #FAB63E, 16px);
+            }
+        }
+        
     }
-}
 }

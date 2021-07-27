@@ -2,6 +2,7 @@
 @import '../../SASS/abstracts/vars';
 @import '../../SASS/basis/fonts';
 
+
 .wrapper{
     width: 300px;
     display: flex;
@@ -42,7 +43,6 @@
     .text{
         @include font ('Larsseit', $cardText, 32px );
         position: relative;
-
         &::before{
             position: absolute;
             content: '';
@@ -50,8 +50,6 @@
             height: 9px;
             background: #E9B730;
             border-radius: 50px;
-            top: 12px;
-            left: -20px;
         }
     }
 }

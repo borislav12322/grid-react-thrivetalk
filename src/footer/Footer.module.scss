@@ -5,11 +5,16 @@
 .footer{
 
 .wrapper {
+
+    
     background-color: #62D0DF;
-    padding-left: 194px;
+    padding-left: 20px;
     display: flex;
     align-items: center;
     min-height: 80px;
+    @media screen and (min-width:992px) {
+        padding-left: 194px;
+    }
 
     .copyRight {
         color: #FFFFFF;

@@ -3,14 +3,8 @@
 
   .wrapper{
   display: grid;
-    grid-template-columns: repeat(4, 300px);
+  grid-template-columns: repeat(4, 300px);
   overflow-x: auto;
-  //display: flex;
-  //justify-content: space-between;
-  //width: 100%;
-    @media screen and (min-width: 768px) {
-
-    }
 
 
   @media screen and (min-width: 768px) {
@@ -20,5 +14,25 @@
   @media screen and (min-width: 1175px) {
     grid-template-columns: repeat(4, 1fr);
   }
+
+
+    .textSmall{
+      padding-top: 95px;
+      padding-left: 54px;
+
+      &::before{
+        left: 30px;
+        top: 105px;
+        position: absolute;
+      }
+ 
+
+      @media screen and (min-width: 1175px){
+      }
+
+      @media screen and (min-width: 1440px){
+      }
+
+    }
 }
 }
